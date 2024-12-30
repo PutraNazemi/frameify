@@ -23,6 +23,7 @@
         <div class="content">
             <h1>Ribbonify</h1>
             <div id="typing-effect"></div>
+            <p id="usage-count">0 pengguna telah menggunakan Ribbonify.</p>
             <div class="start-button-container">
                 <a href="#mulaiupload" class="start-button">Mulai Sekarang<span></span></a>
             </div>
@@ -34,21 +35,24 @@
         <div class="upload-container">
             <div class="upload-section">
                 <h2>Pilih File Twibbon</h2>
-                <p>*File harus berekstensi PNG</p>
+                <p>*File Twibbon harus berekstensi PNG</p>
                 <label for="twibbon-upload1" class="file-upload-button">
                     <i class="bi bi-camera"></i>Pilih Foto 
                     <input type="file" id="twibbon-upload1" accept="image/png" style="display: none;">
                 </label>
+                <p id="twibbon-file-name">Belum ada file yang dipilih.</p> <!-- Elemen untuk nama file Twibbon -->
             </div>
-
+            
             <div class="upload-section">
                 <h2>Pilih File Foto</h2>
-                <p>*Silahkan upload file twibbon terlebih dahulu</p>
+                <p>*Silahkan upload foto terbaik kamu</p>
                 <label for="twibbon-upload2" class="file-upload-button">
                     <i class="bi bi-camera"></i>Pilih Foto
                     <input type="file" id="twibbon-upload2" accept="image/*" style="display: none;">
                 </label>
+                <p id="user-photo-file-name">Belum ada file yang dipilih.</p> <!-- Elemen untuk nama file Foto Pengguna -->
             </div>
+            
         </div>
 
         <div class="preview-section">
