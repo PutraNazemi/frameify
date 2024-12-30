@@ -48,6 +48,15 @@ h1 {
   font-family: Cambria, sans-serif;
 }
 
+#usage-count{
+  font-size: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Cambria, sans-serif;
+}
+
 .start-button-container {
   text-align: center;
   margin-top: 20px;
@@ -282,6 +291,14 @@ h2 {
   color: rgb(255, 70, 70);
 }
 
+#user-photo-file-name {
+  color: #37B1AD;  /* Mengubah warna teks menjadi biru */
+}
+
+#twibbon-file-name{
+  color: #37B1AD;  /* Mengubah warna teks menjadi biru */
+}
+
 .file-upload-button {
   display: inline-block;
   font-family: 'cambria', sans-serif;
@@ -440,6 +457,15 @@ footer p {
     font-family: Cambria, sans-serif;
   }
 
+  #usage-count{
+    font-size: 3vw; /* Mengatur ukuran font typing-effect relatif terhadap lebar layar */
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: Cambria, sans-serif;
+  }
+
   .footer-logo {
     width: 30%; /* Sesuaikan dengan lebar logo Anda */
   }
@@ -467,5 +493,3 @@ footer p {
     border-radius: 4px;
   }
 }
-
-
