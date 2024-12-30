@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const dataURL = previewCanvas.toDataURL("image/png"); // Mengambil data gambar dari canvas
         const a = document.createElement("a");
         a.href = dataURL;
-        a.download = "Twibbon_Ribbonify.png"; // Nama file yang akan diunduh
+        a.download = "Twibbon_Result.png"; // Nama file yang akan diunduh
         a.click(); // Mengklik link untuk memulai download
     }
 
