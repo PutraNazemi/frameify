@@ -66,19 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Fungsi untuk memperbarui jumlah penggunaan
-        function updateUsageCount() {
-            if (!twibbonImage || !userPhotoImage) {
-                alert("Upload foto twibbon dan foto Anda terlebih dahulu.");
-                return;
-            }
-
-            let usageCount = localStorage.getItem("usageCount") || 0;
-            usageCount = parseInt(usageCount) + 1;
-            localStorage.setItem("usageCount", usageCount);
-            usageCountElement.innerText = `Sudah ada ${usageCount} orang yang telah memakai Ribbonify.`;
-        }
-
         // Fungsi untuk mereset pengaturan posisi dan zoom
         function resetValues() {
             userPhotoScale = 1;
@@ -130,10 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Event listener untuk tombol reset
         resetButton.addEventListener("click", resetValues);
 
-        // Tampilkan jumlah penggunaan saat halaman dimuat
-        const usageCount = localStorage.getItem("usageCount") || 0;
-        usageCountElement.innerText = `${usageCount} pengguna telah menggunakan Ribbonify.`;
-    } else {
+        } else {
         console.error("localStorage tidak tersedia di browser ini.");
     }
 });
